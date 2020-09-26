@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Operaciones</string>
+    <string name="lbl_tituloHome">Opciones</string>
+    <string name="areas">Areas</string>
+    <string name="volumenes">Volúmenes</string>
+    <string name="operacion_realizada">Operaciones Realizadas</string>
+    <string-array name="opciones">
+        <item>@string/areas</item>
+        <item>@string/volumenes</item>
+        <item>@string/operacion_realizada</item>
+    </string-array>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="Rectangulo">Rectángulo</string>
+    <string name="triangulo">Trinángulo</string>
+    <string name="circulo">Círculo</string>
+    <string-array name="opcionesAreas">
+        <item>@string/cuadrado</item>
+        <item>@string/Rectangulo</item>
+        <item>@string/triangulo</item>
+        <item>@string/circulo</item>
+    </string-array>
+    <string name="esfera">Esfera</string>
+    <string name="cilindro">Rectángulo</string>
+    <string name="cono">Cono</string>
+    <string name="cubo">Cubo</string>
+    <string-array name="opcionesVolumnes">
+        <item>@string/esfera</item>
+        <item>@string/cilindro</item>
+        <item>@string/cono</item>
+        <item>@string/cubo</item>
+    </string-array>
 </resources>

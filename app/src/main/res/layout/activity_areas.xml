@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Areas">
 
     <TextView
-        android:id="@+id/lblTituloHome"
-        android:layout_width="174dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/lbl_tituloHome"
+        android:id="@+id/textView"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/areas"
         android:textAlignment="center"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/lstOpciones"
-        android:layout_width="384dp"
-        android:layout_height="349dp"
-        android:layout_marginTop="40dp"
+        android:id="@+id/lstAreas"
+        android:layout_width="378dp"
+        android:layout_height="369dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTituloHome" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
