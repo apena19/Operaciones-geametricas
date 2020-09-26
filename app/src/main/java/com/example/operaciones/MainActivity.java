@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case 2:
-                        intent = new Intent(MainActivity.this, OpRealizadas.class);
+                        intent = new Intent(MainActivity.this, ListarOperaciones.class);
                         startActivity(intent);
                         break;
                 }

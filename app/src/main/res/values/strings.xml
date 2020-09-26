@@ -23,10 +23,21 @@
     <string name="cilindro">Rectángulo</string>
     <string name="cono">Cono</string>
     <string name="cubo">Cubo</string>
+    <string name="lbl_lados_cadrado">Valor De Los Lados</string>
+    <string name="cero">0</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="btn_limpiar">Limpiar</string>
     <string-array name="opcionesVolumnes">
         <item>@string/esfera</item>
         <item>@string/cilindro</item>
         <item>@string/cono</item>
         <item>@string/cubo</item>
     </string-array>
+    <string name="lbl_operacion_cuadrado">Area del Cuadrado</string>
+    <string name="lbl_lados">Lados</string>
+    <string name="mensaje_area">El Area es: </string>
+    <string name="lbl_operacion">Operacion</string>
+    <string name="Numero">No</string>
+    <string name="lbl_datos">Datos</string>
+    <string name="lbl_resultado">Resultado</string>
 </resources>
