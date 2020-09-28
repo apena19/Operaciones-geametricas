@@ -40,4 +40,7 @@
     <string name="Numero">No</string>
     <string name="lbl_datos">Datos</string>
     <string name="lbl_resultado">Resultado</string>
+    <string name="lblbase">Base</string>
+    <string name="lbl_altura">Altura</string>
+    <string name="lbl_areaRectangulo">Area del Rectangulo</string>
 </resources>
