@@ -11,7 +11,7 @@
     </string-array>
     <string name="cuadrado">Cuadrado</string>
     <string name="Rectangulo">Rectángulo</string>
-    <string name="triangulo">Trinángulo</string>
+    <string name="triangulo">Triángulo</string>
     <string name="circulo">Círculo</string>
     <string-array name="opcionesAreas">
         <item>@string/cuadrado</item>
@@ -43,4 +43,7 @@
     <string name="lblbase">Base</string>
     <string name="lbl_altura">Altura</string>
     <string name="lbl_areaRectangulo">Area del Rectangulo</string>
+    <string name="lbl_areatriangulo">Area del Triángulo</string>
+    <string name="lbl_area_circulo">Area del Circulo</string>
+    <string name="radio">Radio</string>
 </resources>
