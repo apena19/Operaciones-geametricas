@@ -15,8 +15,8 @@ public class Rectangulo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rectangulo);
-        base = findViewById(R.id.txtBase);
-        altura = findViewById(R.id.txtAltura);
+        base = findViewById(R.id.txtBaseRect);
+        altura = findViewById(R.id.txtAlturaRect);
     }
     public void CalcularT(View v){
         Double resultado;

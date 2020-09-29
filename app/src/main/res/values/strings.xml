@@ -19,7 +19,6 @@
         <item>@string/triangulo</item>
         <item>@string/circulo</item>
     </string-array>
-    <string name="esfera">Esfera</string>
     <string name="cilindro">Cilindro</string>
     <string name="cono">Cono</string>
     <string name="cubo">Cubo</string>
@@ -48,5 +47,9 @@
     <string name="lbl_area_circulo">Area del Circulo</string>
     <string name="lbl_vol_esfera">Volumen de la esfera</string>
     <string name="lbl_vol_cilindro">Volumen del Cilindro</string>
+    <string name="lbl_vol_cono">Volumen del Cono</string>
+    <string name="lbl_vol_cubo">Volumen del Cubo</string>
     <string name="radio">Radio</string>
+    <string name="lbl_arista">Aristas</string>
+    <string name="esfera">Esfera</string>
 </resources>

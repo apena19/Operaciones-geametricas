@@ -7,7 +7,7 @@
     tools:context=".Triangulo">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/lblTituloTringulo"
         android:layout_width="147dp"
         android:layout_height="36dp"
         android:layout_marginTop="28dp"
@@ -21,33 +21,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/lblBaseTri"
         android:layout_width="60dp"
         android:layout_height="27dp"
         android:layout_marginTop="120dp"
         android:text="@string/lblbase"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/txtBase"
+        app:layout_constraintEnd_toStartOf="@+id/txtBaseTri"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/lblAlturaTri"
         android:layout_width="65dp"
         android:layout_height="27dp"
         android:layout_marginTop="60dp"
         android:text="@string/lbl_altura"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/txtAltura"
+        app:layout_constraintEnd_toStartOf="@+id/txtAlturaTri"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/lblBaseTri" />
 
     <EditText
-        android:id="@+id/txtBase"
+        android:id="@+id/txtBaseTri"
         android:layout_width="183dp"
         android:layout_height="45dp"
         android:layout_marginTop="44dp"
@@ -56,10 +56,10 @@
         android:hint="@string/cero"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloTringulo" />
 
     <EditText
-        android:id="@+id/txtAltura"
+        android:id="@+id/txtAlturaTri"
         android:layout_width="183dp"
         android:layout_height="47dp"
         android:layout_marginTop="40dp"
@@ -68,7 +68,7 @@
         android:hint="@string/cero"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBase" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBaseTri" />
 
     <Button
         android:id="@+id/btnCalcularT"
@@ -79,7 +79,7 @@
         android:onClick="Calcular"
         android:text="@string/btn_calcular"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAltura" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaTri" />
 
     <Button
         android:id="@+id/btnLimpiarT"
@@ -92,5 +92,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btnCalcularT"
-        app:layout_constraintTop_toBottomOf="@+id/txtAltura" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaTri" />
 </androidx.constraintlayout.widget.ConstraintLayout>

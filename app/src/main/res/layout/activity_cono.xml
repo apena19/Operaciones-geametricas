@@ -6,4 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".Cono">
 
+
+    <TextView
+        android:id="@+id/lblTituloCono"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/cono"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblRadioCono"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/radio"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtRadioCono"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAlturaCono"
+        android:layout_width="66dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/lbl_altura"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtAlturaCono"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRadioCono" />
+
+    <EditText
+        android:id="@+id/txtRadioCono"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="120dp"
+        android:ems="10"
+        android:hint="@string/cero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloCono" />
+
+    <EditText
+        android:id="@+id/txtAlturaCono"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="116dp"
+        android:ems="10"
+        android:hint="@string/cero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRadioCono" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="96dp"
+        android:onClick="Calcular"
+        android:text="@string/btn_calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaCono" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="limpiar"
+        android:text="@string/btn_limpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaCono" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

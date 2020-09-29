@@ -16,8 +16,8 @@ public class Cilindro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cilindro);
-        radio = findViewById(R.id.txtRadioCi);
-        altura = findViewById(R.id.txtAlturaCi);
+        radio = findViewById(R.id.txtRadioCili);
+        altura = findViewById(R.id.txtAlturaCili);
     }
     public void Calcular(View v){
         Double resultado;

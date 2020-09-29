@@ -16,7 +16,7 @@ public class Circulo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circulo);
-        radio = findViewById(R.id.txtRadioEs);
+        radio = findViewById(R.id.txtRadioCir);
     }
     public void Calcular(View v){
         Double resultado;

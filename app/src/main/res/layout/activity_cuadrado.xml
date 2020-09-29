@@ -7,7 +7,7 @@
     tools:context=".Cuadrado">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tituloCuadrado"
         android:layout_width="152dp"
         android:layout_height="33dp"
         android:layout_marginTop="28dp"
@@ -29,7 +29,7 @@
         android:text="@string/lbl_lados_cadrado"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/tituloCuadrado" />
 
     <EditText
         android:id="@+id/txtLadosCuadrado"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/lblLadosCuadrado"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/tituloCuadrado" />
 
     <Button
         android:id="@+id/btnCalcularCuad"

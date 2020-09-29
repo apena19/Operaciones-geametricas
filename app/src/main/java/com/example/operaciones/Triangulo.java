@@ -15,8 +15,8 @@ public class Triangulo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_triangulo);
-        base = findViewById(R.id.txtBase);
-        altura = findViewById(R.id.txtAltura);
+        base = findViewById(R.id.txtBaseTri);
+        altura = findViewById(R.id.txtAlturaTri);
     }
     public void Calcular(View v){
         Double resultado;

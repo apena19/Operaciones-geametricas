@@ -7,7 +7,7 @@
     tools:context=".Circulo">
 
     <TextView
-        android:id="@+id/lblTituloEsfera"
+        android:id="@+id/lblTituloCirculo"
         android:layout_width="124dp"
         android:layout_height="36dp"
         android:layout_marginTop="28dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lblRadio"
+        android:id="@+id/lblRadioCir"
         android:layout_width="74dp"
         android:layout_height="28dp"
         android:layout_marginStart="44dp"
@@ -30,10 +30,10 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTituloEsfera" />
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloCirculo" />
 
     <EditText
-        android:id="@+id/txtRadioEs"
+        android:id="@+id/txtRadioCir"
         android:layout_width="162dp"
         android:layout_height="47dp"
         android:layout_marginTop="60dp"
@@ -42,8 +42,8 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.251"
-        app:layout_constraintStart_toEndOf="@+id/lblRadio"
-        app:layout_constraintTop_toBottomOf="@+id/lblTituloEsfera" />
+        app:layout_constraintStart_toEndOf="@+id/lblRadioCir"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloCirculo" />
 
     <Button
         android:id="@+id/btnCalcular"
@@ -54,7 +54,7 @@
         android:onClick="Calcular"
         android:text="@string/btn_calcular"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRadioEs" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRadioCir" />
 
     <Button
         android:id="@+id/BtnLimpiar"
@@ -67,5 +67,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.818"
         app:layout_constraintStart_toEndOf="@+id/btnCalcular"
-        app:layout_constraintTop_toBottomOf="@+id/txtRadioEs" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRadioCir" />
 </androidx.constraintlayout.widget.ConstraintLayout>

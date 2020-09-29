@@ -7,7 +7,7 @@
     tools:context=".Cilindro">
 
     <TextView
-        android:id="@+id/lblTituloEsfera"
+        android:id="@+id/lblTituloCilindro"
         android:layout_width="124dp"
         android:layout_height="36dp"
         android:layout_marginTop="28dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lblRadioC"
+        android:id="@+id/lblRadioCili"
         android:layout_width="66dp"
         android:layout_height="30dp"
         android:layout_marginStart="44dp"
@@ -30,27 +30,28 @@
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/txtRadioCi"
+        app:layout_constraintEnd_toStartOf="@+id/txtRadioCili"
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lblAlturaC"
-        android:layout_width="66dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="56dp"
+        android:id="@+id/lblAlturaCili"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
         android:text="@string/lbl_altura"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/txtAlturaCi"
-        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintEnd_toStartOf="@+id/txtAlturaCili"
+        app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblRadioC" />
+        app:layout_constraintTop_toBottomOf="@+id/lblRadioCili" />
 
     <EditText
-        android:id="@+id/txtRadioCi"
+        android:id="@+id/txtRadioCili"
         android:layout_width="150dp"
         android:layout_height="44dp"
         android:layout_marginTop="68dp"
@@ -59,10 +60,10 @@
         android:hint="@string/cero"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTituloEsfera" />
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloCilindro" />
 
     <EditText
-        android:id="@+id/txtAlturaCi"
+        android:id="@+id/txtAlturaCili"
         android:layout_width="152dp"
         android:layout_height="50dp"
         android:layout_marginTop="44dp"
@@ -71,28 +72,28 @@
         android:hint="@string/cero"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRadioCi" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRadioCili" />
 
     <Button
         android:id="@+id/btnCalcular"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
         android:onClick="Calcular"
         android:text="@string/btn_calcular"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAlturaCi" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaCili" />
 
     <Button
         android:id="@+id/btnLimpiar"
         android:layout_width="126dp"
         android:layout_height="48dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="68dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="76dp"
         android:onClick="limpiar"
         android:text="@string/btn_limpiar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAlturaCi" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaCili" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
