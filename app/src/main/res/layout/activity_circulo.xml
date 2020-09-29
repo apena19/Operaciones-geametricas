@@ -7,7 +7,7 @@
     tools:context=".Circulo">
 
     <TextView
-        android:id="@+id/lblTituloCirculo"
+        android:id="@+id/lblTituloEsfera"
         android:layout_width="124dp"
         android:layout_height="36dp"
         android:layout_marginTop="28dp"
@@ -30,10 +30,10 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTituloCirculo" />
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloEsfera" />
 
     <EditText
-        android:id="@+id/txtRadio"
+        android:id="@+id/txtRadioEs"
         android:layout_width="162dp"
         android:layout_height="47dp"
         android:layout_marginTop="60dp"
@@ -43,10 +43,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.251"
         app:layout_constraintStart_toEndOf="@+id/lblRadio"
-        app:layout_constraintTop_toBottomOf="@+id/lblTituloCirculo" />
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloEsfera" />
 
     <Button
-        android:id="@+id/btnCalcularC"
+        android:id="@+id/btnCalcular"
         android:layout_width="118dp"
         android:layout_height="56dp"
         android:layout_marginStart="76dp"
@@ -54,10 +54,10 @@
         android:onClick="Calcular"
         android:text="@string/btn_calcular"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRadio" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRadioEs" />
 
     <Button
-        android:id="@+id/BtnLimpiarC"
+        android:id="@+id/BtnLimpiar"
         android:layout_width="131dp"
         android:layout_height="58dp"
         android:layout_marginTop="100dp"
@@ -66,6 +66,6 @@
         android:text="@string/btn_limpiar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.818"
-        app:layout_constraintStart_toEndOf="@+id/btnCalcularC"
-        app:layout_constraintTop_toBottomOf="@+id/txtRadio" />
+        app:layout_constraintStart_toEndOf="@+id/btnCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/txtRadioEs" />
 </androidx.constraintlayout.widget.ConstraintLayout>

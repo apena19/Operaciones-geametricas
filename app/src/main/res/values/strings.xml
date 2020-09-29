@@ -20,7 +20,7 @@
         <item>@string/circulo</item>
     </string-array>
     <string name="esfera">Esfera</string>
-    <string name="cilindro">Rectángulo</string>
+    <string name="cilindro">Cilindro</string>
     <string name="cono">Cono</string>
     <string name="cubo">Cubo</string>
     <string name="lbl_lados_cadrado">Valor De Los Lados</string>
@@ -36,6 +36,7 @@
     <string name="lbl_operacion_cuadrado">Area del Cuadrado</string>
     <string name="lbl_lados">Lados</string>
     <string name="mensaje_area">El Area es: </string>
+    <string name="mensaje_volumen">El Volumen es: </string>
     <string name="lbl_operacion">Operacion</string>
     <string name="Numero">No</string>
     <string name="lbl_datos">Datos</string>
@@ -45,5 +46,7 @@
     <string name="lbl_areaRectangulo">Area del Rectangulo</string>
     <string name="lbl_areatriangulo">Area del Triángulo</string>
     <string name="lbl_area_circulo">Area del Circulo</string>
+    <string name="lbl_vol_esfera">Volumen de la esfera</string>
+    <string name="lbl_vol_cilindro">Volumen del Cilindro</string>
     <string name="radio">Radio</string>
 </resources>
