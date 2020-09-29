@@ -20,21 +20,39 @@ public class Cilindro extends AppCompatActivity {
         altura = findViewById(R.id.txtAlturaCili);
     }
     public void Calcular(View v){
-        Double resultado;
-        String datos, nombre_operacion, radio_t, altura_t ;
-        Operacion op;
-        nombre_operacion = getString(R.string.lbl_vol_cilindro);
-        radio_t = radio.getText().toString();
-        altura_t = altura.getText().toString();
-        datos = getString(R.string.radio) + " " + radio_t + "--" + getString(R.string.lbl_altura) + " " + altura_t ;
-        resultado =  PI * Math.pow( parseDouble(radio_t) , 2) * parseDouble(altura_t);
-        op = new Operacion(nombre_operacion, datos, resultado );
-        op.guardar();
-        Toast.makeText(this, getString(R.string.mensaje_volumen) + " " +resultado,Toast.LENGTH_LONG).show();
+        if(Validar()){
+            Double resultado;
+            String datos, nombre_operacion, radio_t, altura_t, temp ;
+            Operacion op;
+            nombre_operacion = getString(R.string.lbl_vol_cilindro);
+            radio_t = radio.getText().toString();
+            altura_t = altura.getText().toString();
+            datos = getString(R.string.radio) + " " + radio_t + "--" + getString(R.string.lbl_altura) + " " + altura_t ;
+            temp = String.format("%.2f", PI * Math.pow( parseDouble(radio_t) , 2) * parseDouble(altura_t));
+            resultado =  parseDouble(temp);
+            op = new Operacion(nombre_operacion, datos, resultado );
+            op.guardar();
+            Toast.makeText(this, getString(R.string.mensaje_volumen) + " " +resultado,Toast.LENGTH_LONG).show();
+        }
     }
     public void limpiar(View v){
         radio.setText("");
         altura.setText("");
         radio.requestFocus();
+    }
+    public Boolean Validar(){
+        radio = findViewById(R.id.txtRadioCili);
+        altura = findViewById(R.id.txtAlturaCili);
+        if(radio.getText().toString().isEmpty()){
+            radio.setError(getString(R.string.error));
+            radio.requestFocus();
+            return  false;
+        }
+        if(altura.getText().toString().isEmpty()){
+            altura.setError(getString(R.string.error));
+            altura.requestFocus();
+            return  false;
+        }
+        return true;
     }
 }

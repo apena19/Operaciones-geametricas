@@ -9,7 +9,7 @@
     <string name="Rectangulo">Rectangle</string>
     <string name="triangulo">Triangle</string>
     <string name="circulo">Circle</string>
-    <string name="esfera">Circle AreaCircle AreaCircle Area</string>
+    <string name="esfera">Sphere</string>
     <string name="cilindro">Cylinder</string>
     <string name="cono">Cone</string>
     <string name="cubo">Cube</string>
@@ -36,4 +36,5 @@
     <string name="lbl_vol_cubo">Bucket Volume</string>
     <string name="radio">Radio</string>
     <string name="lbl_arista">Edges</string>
+    <string name="error">"Required "</string>
 </resources>

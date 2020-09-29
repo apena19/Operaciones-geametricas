@@ -19,19 +19,32 @@ public class Circulo extends AppCompatActivity {
         radio = findViewById(R.id.txtRadioCir);
     }
     public void Calcular(View v){
-        Double resultado;
-        String datos, nombre_operacion, radioC ;
-        Operacion op;
-        nombre_operacion = getString(R.string.lbl_area_circulo);
-        radioC = radio.getText().toString();
-        datos = getString(R.string.radio) + " " + radioC  ;
-        resultado =  PI * ( parseDouble(radioC ) * parseDouble(radioC ) ) ;
-        op = new Operacion(nombre_operacion, datos, resultado );
-        op.guardar();
-        Toast.makeText(this, getString(R.string.mensaje_area) + " " +resultado,Toast.LENGTH_LONG).show();
+        if(Validar()){
+            Double resultado;
+            String datos, nombre_operacion, radioC ;
+            Operacion op;
+            nombre_operacion = getString(R.string.lbl_area_circulo);
+            radioC = radio.getText().toString();
+            datos = getString(R.string.radio) + " " + radioC  ;
+            String temp;
+            temp = String.format("%.2f", PI * ( parseDouble(radioC ) * parseDouble(radioC ) ) );
+            resultado =  parseDouble(temp);
+            op = new Operacion(nombre_operacion, datos, resultado );
+            op.guardar();
+            Toast.makeText(this, getString(R.string.mensaje_area) + " " +resultado,Toast.LENGTH_LONG).show();
+        }
     }
     public void limpiar(View v){
         radio.setText("");
         radio.requestFocus();
+    }
+    public Boolean Validar(){
+        radio = findViewById(R.id.txtRadioCir);
+        if(radio.getText().toString().isEmpty()){
+            radio.setError(getString(R.string.error));
+            radio.requestFocus();
+            return  false;
+        }
+        return true;
     }
 }
